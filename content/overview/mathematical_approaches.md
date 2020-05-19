@@ -1,7 +1,7 @@
 ---
 title: "Mathematical Approaches"
 date: 2020-05-19T14:53:05+05:30
-draft: true
+draft: false
 Description: ""
 Tags: []
 Categories: []
