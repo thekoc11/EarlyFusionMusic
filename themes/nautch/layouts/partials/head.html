@@ -1,0 +1,28 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> {{ if ne .Title .Site.Title }}
+        {{.Title }} |
+    {{ end }} {{ .Site.Title }} </title>
+
+    <meta name="theme-color" content="" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="{{ .Site.Params.description }}" />
+    <meta name="author" content="{{ .Site.Params.author }}" />
+  
+    <meta
+      property="og:url"
+      content="{{ .Permalink }}"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ .Site.Params.title }}{{ if .Title }} - {{ .Title }} {{ end }}" />
+    <meta property="og:description" content="{{ .Site.Params.description }}" />
+    <meta
+      property="og:image"
+      content="{{ `images/profile.jpg` | absURL }}"
+    />
+  
+    <link rel="stylesheet" href="{{ `/css/style.css` | relURL }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+</head>

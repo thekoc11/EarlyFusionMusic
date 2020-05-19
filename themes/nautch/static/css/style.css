@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=El+Messiri&family=Marko+One&display=swap");
+body {
+  margin: 0;
+  font-family: 'El Messiri', sans-serif;
+  color: white;
+  background-image: url("nautch_filtered.png");
+  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+body header {
+  position: fixed;
+  top: 0;
+  height: 12vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 100vw;
+  text-align: center;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+body header nav {
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns:  19.6% 19.6% 19.6% 19.6% 19.6%;
+      grid-template-columns: 19.6% 19.6% 19.6% 19.6% 19.6%;
+  height: inherit;
+  font-family: 'Marko One', serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 1%;
+}
+
+body header nav .navbar-item {
+  margin: 10% 0 0 0;
+  font-size: larger;
+  align-items: center;
+  padding: 5% 0 0 0;
+}
+
+body header nav .active {
+  background-color: #DDDDDD;
+  border-radius: 12px 12px 0 0;
+  color: #4f4f4f !important;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.right {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 5%;
+  margin: 2%;
+  overflow-y: scroll;
+}
+
+.right .container {
+  margin: 0 auto;
+}
+
+.right .container h1 {
+  margin: 1em 0;
+  font-family: 'Cinzel Decorative', cursive !important;
+  font-weight: bold;
+  text-align: left;
+  line-height: 49px;
+}
+
+.right .container h1 .h1-light {
+  font-weight: normal;
+}
+
+.left {
+  text-align: left;
+  background: rgba(0, 0, 0, 0.65);
+  margin: 5% 0% 5% 10%;
+  padding: 5%;
+  border-radius: 15px;
+}
+
+.left .left-list {
+  width: 100%;
+  display: block;
+  padding: 5% 0;
+  margin: 5% 0;
+}
+
+.left .active {
+  background-color: #DDDDDD;
+  color: #4f4f4f;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+}
+
+a {
+    color: #dddddd;
+    text-decoration: none;
+}
+
+.left .top {
+  font-size: larger;
+  font-family: 'Marko One', serif;
+}
+
+.inner {
+  width: 100vw;  
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto;
+      grid-template-columns: 20% auto;
+  height: 85vh;
+  top: 12vh;
+  position: fixed;
+}
+
+.inner-home {
+  display: flex;
+  height: 80vh;
+  top: 12vh;
+  width: 90vw;
+  position: fixed;
+  margin: 2% 5% 2% 5%;
+  text-align: center;
+}
+
+.inner-home .right .container .images {
+  display: block;
+  width: 100%;
+  height: 60%;
+}
+
+.inner-home .right .container .images .nias {
+  width: 50%;
+  height: 30vh;
+  position: fixed;
+  background-image: url("NIAS.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: auto;
+  left: 10vw;
+}
+
+.inner-home .right .container .images .csp {
+  width: 50%;
+  height: 30vh;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-image: url("Nias_CSP.png");
+  background-size: contain;
+  background-position: center;
+  margin: auto;
+  right: 10vw;
+}
+
+footer {
+    display: block;
+    position: fixed;
+    height: 5vh;
+    bottom: 0vh;
+    text-align: center;
+    width: 100vw;
+  }
+/*# sourceMappingURL=main.css.map */

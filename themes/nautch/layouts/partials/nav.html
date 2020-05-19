@@ -1,0 +1,32 @@
+<nav class="navbar" >
+<!--    <span class="navbar-item" > Home </span>
+    <span class="navbar-item active" > Overview </span>
+    <span class="navbar-item" > About Us </span>
+    <span class="navbar-item" > North India </span>
+    <span class="navbar-item" > South India </span>
+-->
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+        
+    <span class="navbar-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active {{ end }} " > 
+        {{ if or ($currentPage.IsMenuCurrent "main" . ) ($currentPage.HasMenuCurrent "main" . ) }}
+        {{ .Title }}
+        {{ else }}
+        <a href="{{ .URL }}" title="{{ .Title }}"> {{ .Name }} </a>
+        {{ end }}
+        </span>        
+    {{ end }}
+</nav>
+
+{{ define "naav" }}
+    {{ if .p1.Parent }}
+        {{ template "naav" (dict "p1" .p1.Parent "p2" .p2) }}
+    {{ else if not .p1.IsHome }}
+        {{ template "naav" (dict "p1" .p1.Site.Home "p2" .p2) }}
+    {{ end }}
+
+    <span class="navbar-item {{ if eq .p1 .p2 }} active {{ end }}"> 
+        <a href="{{ .p1.Permalink }}"> {{ .p1.Title }} </a>
+    </span>
+
+{{ end }}

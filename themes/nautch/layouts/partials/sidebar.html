@@ -1,0 +1,50 @@
+
+{{ $currentPage := . }}
+{{ $top := "" }}
+{{ $active := "" }}
+
+{{/*  {{ if .IsNode }}
+    <span class="left-list {{ if .IsNode }} top {{ end }} {{ if eq .Permalink $currentPage.Permalink }} active {{ end }}"><a href={{ .Permalink }}> {{ .Title }} </a></span>
+    {{ range .Pages }}
+        <span class="left-list {{ if .IsNode }} top {{ end }} {{ if eq .Permalink $currentPage.Permalink }} active {{ end }}"><a href={{ .Permalink }}> {{ .Title }} </a></span>
+    {{ end }}
+{{ else if .IsPage }}
+    {{ range .CurrentSection.Pages }}
+    <span class="left-list {{ if .IsNode }} top {{ end }} {{ if eq .Permalink $currentPage.Permalink }} active {{ end }}">
+        {{ if eq .Permalink $currentPage.Permalink }}
+            {{ .Title }}
+        {{ else }}
+            <a href={{ .Permalink }}> {{ .Title }} </a>
+        {{ end }}
+    </span>    
+    {{ end }}
+{{ end }}  */}}
+
+<span class="left-list {{ if .FirstSection.IsNode }} top {{ end }} {{ if eq .FirstSection.Permalink $currentPage.Permalink }} active {{ end }}">
+    {{ if eq .FirstSection.Permalink $currentPage.Permalink }}
+        {{ .FirstSection.Title }}
+    {{ else }}
+        <a href={{ .FirstSection.Permalink }}> {{ .FirstSection.Title }} </a>
+    {{ end }}
+</span>  
+
+{{ range .FirstSection.Pages }}
+    <span class="left-list {{ if .IsNode }} top {{ end }} {{ if eq .Permalink $currentPage.Permalink }} active {{ end }}">
+        {{ if eq .Permalink $currentPage.Permalink }}
+            {{ .Title }}
+        {{ else }}
+            <a href={{ .Permalink }}> {{ .Title }} </a>
+        {{ end }}
+    </span>  
+    {{ if .IsNode }}
+        {{ range .Pages }}
+        <span class="left-list{{ if eq .Permalink $currentPage.Permalink }} active {{ end }}">
+            {{ if eq .Permalink $currentPage.Permalink }}
+                {{ .Title }}
+            {{ else }}
+                <a href={{ .Permalink }}> {{ .Title }} </a>
+            {{ end }}
+        </span>  
+        {{ end }}
+    {{ end }}
+{{ end }}

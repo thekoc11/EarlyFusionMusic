@@ -1,0 +1,11 @@
+baseURL: /
+title: "Random Blog"
+defaultContentLanguage: en
+languages:
+  en:
+    lang: en
+    languageName: English
+    weight: 1
+MetaDataFormat: "yaml"
+theme: "nautch"
+sectionPagesMenu: mainMenu
