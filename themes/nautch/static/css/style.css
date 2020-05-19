@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=El+Messiri&family=Marko+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=El+Messiri&family=Marko+One&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 body {
   margin: 0;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-stretch: ultra-expanded;
   color: white;
   background-image: url("nautch_filtered.png");
   background-size: cover;
@@ -162,5 +164,6 @@ footer {
     bottom: 0vh;
     text-align: center;
     width: 100vw;
+    font-family: 'El Messiri', sans-serif;
   }
 /*# sourceMappingURL=main.css.map */
