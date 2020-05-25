@@ -1,17 +1,15 @@
 ---
-title: "Nōṭṭusvarams"
-date: 2020-05-10T22:31:18+05:30
-draft: true
-Description: ""
+title: Nōṭṭusvarams
+date: 2020-05-10T17:01:18.000+00:00
+Description: ''
 Tags: []
 Categories: []
 menu:
-    south:
-        parent: main
-        weight: 130
+  south:
+    parent: main
+    weight: 130
 
 ---
-
 **Nōṭṭu svarams** were first documented in print by **C. P. Brown** in
 1833. In 1893, **Manālī Chinnaswamy Mudaliar** published them with
 European notation, and in 1905, they were compiled in Telugu by
