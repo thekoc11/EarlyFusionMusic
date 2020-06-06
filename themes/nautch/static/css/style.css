@@ -68,6 +68,12 @@ body header nav .active {
   line-height: 49px;
 }
 
+.right .container h2 {
+  font-family: 'Cinzel Decorative', cursive !important;
+  line-height: 40px;
+  font-size: large;
+}
+
 .right .container h1 .h1-light {
   font-weight: normal;
 }
@@ -107,7 +113,7 @@ a {
 }
 
 .inner {
-  width: 100vw;  
+  width: 100vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% auto;

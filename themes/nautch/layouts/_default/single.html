@@ -1,6 +1,7 @@
 {{- define "main" }}
 <article>
   <h1> {{ .Title }} </h1>
+  <h4> Author : {{ .Params.author }} </h4>
   <h4> {{ .Lastmod }} </h4>
   {{- .Content -}}
 </article>

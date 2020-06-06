@@ -10,7 +10,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="description" content="{{ .Site.Params.description }}" />
     <meta name="author" content="{{ .Site.Params.author }}" />
-  
+
     <meta
       property="og:url"
       content="{{ .Permalink }}"
@@ -22,7 +22,11 @@
       property="og:image"
       content="{{ `images/profile.jpg` | absURL }}"
     />
-  
+
     <link rel="stylesheet" href="{{ `/css/style.css` | relURL }}" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+
+    {{- partial "mathjax.html" . -}}
+
+
 </head>
