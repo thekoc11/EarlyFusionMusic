@@ -9,3 +9,8 @@ languages:
 MetaDataFormat: "yaml"
 theme: "nautch"
 sectionPagesMenu: mainMenu
+
+markup:
+    goldmark:
+      renderer:
+        unsafe: true
