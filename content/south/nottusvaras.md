@@ -8,7 +8,7 @@ menu:
   south:
     parent: main
     weight: 130
-
+author: Abhishek Nandekar
 ---
 **Nōṭṭu svarams** were first documented in print by **C. P. Brown** in
 1833. In 1893, **Manālī Chinnaswamy Mudaliar** published them with
