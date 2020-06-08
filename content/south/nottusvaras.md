@@ -38,7 +38,7 @@ Scale-wise, the śaṅkarābharaṇaṃ scale corresponds to the Western **Major
 Scale**, or the ***Ionian Mode***. This is the prime reason why many
 European/Colonial songs could be expressed in this rāgam.
 
-### A list of Dīkṣitar's the Nōṭṭu svarams
+### A list of Dīkṣitar's Nōṭṭu svarams
 
 | **jāti svarams** | **gati** |  **English/European Counterpart**|  
 |:-------:| :------: |:------------------:|
