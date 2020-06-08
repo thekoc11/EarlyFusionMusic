@@ -17,6 +17,9 @@ output:
 papersize: A4
 ---
 ## An algorithm for detecting the pitch of a given audio track
+<!-- ***Abhishek Nandekar, Dr.Nithin Nagaraj***    
+*National Institute of Advanced Studies, Bengaluru, 560012* -->
+
 
 ### Introduction
 
