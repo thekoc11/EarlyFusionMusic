@@ -9,7 +9,7 @@ menu:
   overview:
     parent: main
     weight: 100
-draft: true
+draft: false
 output:
   pdf_document:
     number_section: true
