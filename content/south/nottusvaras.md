@@ -30,7 +30,7 @@ Dhīraśankarābharaṇaṃ
 
 **Dhīraśankarābharaṇaṃ**, also commonly known as **śaṅkarābharaṇaṃ** is
 a ***Mēḷakarta rāga***(parent rāga, from which other rāgas may be
-gnerated) in the 72 *Mēḷakarta rāga* system of Carnatic Music.
+gnerated) in the 72 *Mēḷakarta rāga* system of Carnatic Music. It is a counterpart of the **Bilawal Thaat** in Hindustani music.
 Mellifluous and smooth by nature, this rāga is ideal for a melodious but
 still a laid back majestic presentation.
 
@@ -38,7 +38,7 @@ Scale-wise, the śaṅkarābharaṇaṃ scale corresponds to the Western **Major
 Scale**, or the ***Ionian Mode***. This is the prime reason why many
 European/Colonial songs could be expressed in this rāgam.
 
-### A list of all the Nōṭṭu svarams
+### A list of Dīkṣitar's the Nōṭṭu svarams
 
 | **jāti svarams** | **gati** |  **English/European Counterpart**|  
 |:-------:| :------: |:------------------:|
