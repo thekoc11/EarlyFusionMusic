@@ -84,6 +84,7 @@ $$
 \begin{equation*}
 \tag{ii}
 \chi_{CQ}(k, n) := \sum_{j = n - \lfloor N_k/2 \rfloor}^{n + \lfloor N_k/2 \rfloor} x(j)\cdot a_k^{*}(j - n + N_k/2)
+\label{eqCQT}
 \end{equation*}
 $$  
 
@@ -152,8 +153,11 @@ The model uses the **Stochastic Gradient Descent(SGD)** optimiser, with **softma
 
 The softmax function:
   : The simplest definition of a softmax function:   
-  $$\tag{iii}
-  \sigma(\textbf{x})_i = \frac{e^{x_i}}{\sum_{j=1}^K e^{x_j}}, ~ i\in [1:K], ~\textbf{x} = (x_{[1:K]})  
+  $$\begin{equation*}
+  \tag{iii}
+  \sigma(\textbf{x})_i = \frac{e^{x_i}}{\sum_{j=1}^K e^{x_j}}, ~ i\in [1:K], ~\textbf{x} = (x_{[1:K]})
+  \label{eqSoftMax}  
+  \end{equation*}
   $$  
 
 In our case, $K=48$.
@@ -192,12 +196,12 @@ The VSTs used in this experiment were different types of organs like the Church 
 
 The testing is done as follows:   
 
-1. For each audio clip, CQT or STFT is calculated(eq (i) or eq(ii)) and the first frame is chosen. As a result, we end up with a $1 \times n$ matrix $\vec{x}$.   
+1. For each audio clip, CQT or STFT is calculated(eq $\eqref{eqCQT}$ or eq $\eqref{eq: STFT}$) and the first frame is chosen. As a result, we end up with a $1 \times n$ matrix $\vec{x}$.   
 
 2. We then take the dot product of the $1 \times n$ matrix $\vec{x}$ with the $n \times 48$ matrix $\textbf{W}$ obtained via training.  
 $$ \vec{y}' = \vec{x}~ \cdot~ \textbf{W} $$  
 
-3. We then obtain the final output $1 \times 48$ vector $\vec{y}$ by taking the softmax(eq (iii)) of $\vec{y}'$.  
+3. We then obtain the final output $1 \times 48$ vector $\vec{y}$ by taking the softmax(eq \eqref{eqSoftMax}) of $\vec{y}'$.  
 $$ \vec{y} = (\sigma(\vec{y}')_{[1:48]} )$$   
 
 
