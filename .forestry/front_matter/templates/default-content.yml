@@ -31,9 +31,13 @@ fields:
     - type: boolean
       name: number_section
       label: number_section
+      hidden: true
     - type: text
       name: latex_engine
       label: latex_engine
+      hidden: true
+    hidden: true
 - type: text
   name: papersize
   label: papersize
+  hidden: true
