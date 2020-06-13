@@ -42,3 +42,5 @@ fields:
   name: papersize
   label: papersize
   hidden: true
+pages:
+- content/overview/mathematical_approaches.md
