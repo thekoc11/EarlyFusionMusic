@@ -1,0 +1,39 @@
+---
+label: default-content
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: author
+  label: author
+- type: text
+  name: Description
+  label: Description
+- type: list
+  name: Tags
+  label: Tags
+- type: list
+  name: Categories
+  label: Categories
+- type: field_group
+  name: output
+  label: output
+  fields:
+  - type: field_group
+    name: pdf_document
+    label: pdf_document
+    fields:
+    - type: boolean
+      name: number_section
+      label: number_section
+    - type: text
+      name: latex_engine
+      label: latex_engine
+- type: text
+  name: papersize
+  label: papersize
