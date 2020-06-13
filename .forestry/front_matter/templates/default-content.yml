@@ -37,6 +37,7 @@ fields:
       label: latex_engine
       hidden: true
     hidden: true
+  hidden: true
 - type: text
   name: papersize
   label: papersize
