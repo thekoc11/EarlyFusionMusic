@@ -43,4 +43,5 @@ fields:
   label: papersize
   hidden: true
 pages:
+- content/about/_index.md
 - content/overview/mathematical_approaches.md
